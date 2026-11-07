@@ -1,0 +1,23 @@
+{
+  "dataset_name": "M5_Processed",
+  "total_records": 4050,
+  "unique_series": 45,
+  "unique_items": 15,
+  "unique_stores": 3,
+  "start_date": "2011-01-29",
+  "end_date": "2011-04-28",
+  "total_days": 90,
+  "zero_sales_count": 1365,
+  "zero_sales_pct": 33.7037037037037,
+  "missing_sales_count": 0,
+  "missing_sales_pct": 0.0,
+  "negative_sales_count": 0,
+  "missing_price_count": 0,
+  "missing_price_pct": 0.0,
+  "unlisted_item_days_count": 0,
+  "duplicate_records_count": 0,
+  "date_continuity_violations": 0,
+  "hierarchy_violations": 0,
+  "is_valid": true,
+  "issues": []
+}

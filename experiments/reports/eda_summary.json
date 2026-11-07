@@ -1,0 +1,230 @@
+{
+  "A_sales_distribution": {
+    "total_observations": 4050,
+    "mean_sales": 2.2328,
+    "median_sales": 2.0,
+    "std_sales": 2.2036,
+    "zero_sales_count": 1365,
+    "zero_sales_pct": 33.7,
+    "non_zero_mean": 3.368,
+    "non_zero_std": 1.8711,
+    "skewness": 0.821
+  },
+  "B_temporal_behaviour": {
+    "day_of_week_seasonal_indices": [
+      {
+        "dayofweek": 0,
+        "mean": 2.114529848098755,
+        "std": 2.1113386154174805,
+        "count": 585,
+        "day_name": "Monday",
+        "seasonal_index": 0.947013795375824
+      },
+      {
+        "dayofweek": 1,
+        "mean": 2.3128204345703125,
+        "std": 2.212106227874756,
+        "count": 585,
+        "day_name": "Tuesday",
+        "seasonal_index": 1.0358202457427979
+      },
+      {
+        "dayofweek": 2,
+        "mean": 2.112820625305176,
+        "std": 2.1812376976013184,
+        "count": 585,
+        "day_name": "Wednesday",
+        "seasonal_index": 0.9462482929229736
+      },
+      {
+        "dayofweek": 3,
+        "mean": 2.2068376541137695,
+        "std": 2.1461868286132812,
+        "count": 585,
+        "day_name": "Thursday",
+        "seasonal_index": 0.9883547425270081
+      },
+      {
+        "dayofweek": 4,
+        "mean": 2.275925874710083,
+        "std": 2.1860949993133545,
+        "count": 540,
+        "day_name": "Friday",
+        "seasonal_index": 1.019296646118164
+      },
+      {
+        "dayofweek": 5,
+        "mean": 2.3914530277252197,
+        "std": 2.385514736175537,
+        "count": 585,
+        "day_name": "Saturday",
+        "seasonal_index": 1.071036696434021
+      },
+      {
+        "dayofweek": 6,
+        "mean": 2.2188034057617188,
+        "std": 2.1880722045898438,
+        "count": 585,
+        "day_name": "Sunday",
+        "seasonal_index": 0.9937137365341187
+      }
+    ],
+    "monthly_seasonal_indices": [
+      {
+        "month": 1,
+        "mean": 2.2962963581085205,
+        "std": 2.192504405975342,
+        "count": 135,
+        "seasonal_index": 1.0284197330474854
+      },
+      {
+        "month": 2,
+        "mean": 2.2626984119415283,
+        "std": 2.2461769580841064,
+        "count": 1260,
+        "seasonal_index": 1.013372540473938
+      },
+      {
+        "month": 3,
+        "mean": 2.2215054035186768,
+        "std": 2.1680731773376465,
+        "count": 1395,
+        "seasonal_index": 0.9949238896369934
+      },
+      {
+        "month": 4,
+        "mean": 2.2087302207946777,
+        "std": 2.202984571456909,
+        "count": 1260,
+        "seasonal_index": 0.9892023801803589
+      }
+    ],
+    "snap_uplift": {
+      "snap_on_mean": 2.2214999198913574,
+      "snap_off_mean": 2.2390999794006348,
+      "snap_uplift_ratio": 0.9922000169754028,
+      "snap_uplift_pct": -0.7799999713897705
+    },
+    "event_uplift": [
+      {
+        "event_name": "SuperBowl",
+        "count": 45,
+        "mean_sales": 2.799999952316284,
+        "baseline_mean_sales": 2.2264668941497803,
+        "uplift_ratio": 1.257599949836731,
+        "uplift_pct": 25.760000228881836
+      }
+    ]
+  },
+  "C_product_behaviour": {
+    "total_series": 45,
+    "regime_distribution": {
+      "Intermittent": 42,
+      "Smooth": 3
+    },
+    "regime_pct": {
+      "Intermittent": 93.33,
+      "Smooth": 6.67
+    },
+    "avg_adi": 1.5232,
+    "avg_cv2": 0.2646,
+    "top_demand_skus": [
+      {
+        "series_id": "HOUSEHOLD_3_011_WI_1_validation",
+        "mean_sales": 3.7778,
+        "regime": "Smooth"
+      },
+      {
+        "series_id": "HOBBIES_2_001_WI_1_validation",
+        "mean_sales": 3.7111,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "HOUSEHOLD_3_014_WI_1_validation",
+        "mean_sales": 3.2444,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "HOBBIES_2_004_WI_1_validation",
+        "mean_sales": 3.2111,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "HOBBIES_2_010_TX_1_validation",
+        "mean_sales": 3.0778,
+        "regime": "Smooth"
+      }
+    ],
+    "most_volatile_skus": [
+      {
+        "series_id": "HOUSEHOLD_3_008_CA_1_validation",
+        "cv2": 0.4191,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "HOUSEHOLD_3_005_CA_1_validation",
+        "cv2": 0.3956,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "FOODS_1_006_TX_1_validation",
+        "cv2": 0.3686,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "FOODS_1_009_CA_1_validation",
+        "cv2": 0.3621,
+        "regime": "Intermittent"
+      },
+      {
+        "series_id": "FOODS_1_006_CA_1_validation",
+        "cv2": 0.3577,
+        "regime": "Intermittent"
+      }
+    ]
+  },
+  "D_price_behaviour": {
+    "avg_sell_price": 6.14,
+    "min_sell_price": 1.29,
+    "max_sell_price": 11.89,
+    "price_elasticity_by_category": [
+      {
+        "group": "FOODS",
+        "elasticity": -0.1383,
+        "r_squared": 0.0132,
+        "p_value": 2.3e-05,
+        "sample_size": 1350,
+        "interpretation": "Inelastic (Staple demand)"
+      },
+      {
+        "group": "HOBBIES",
+        "elasticity": -0.0926,
+        "r_squared": 0.0062,
+        "p_value": 0.003832,
+        "sample_size": 1350,
+        "interpretation": "Inelastic (Staple demand)"
+      },
+      {
+        "group": "HOUSEHOLD",
+        "elasticity": 0.159,
+        "r_squared": 0.0139,
+        "p_value": 1.4e-05,
+        "sample_size": 1350,
+        "interpretation": "Positive slope (Price-insensitive / Luxury anomaly)"
+      }
+    ]
+  },
+  "E_hierarchical_analysis": {
+    "total_business_demand": 9043.0,
+    "state_volume_share_pct": {
+      "CA": 23.68000030517578,
+      "TX": 34.41999816894531,
+      "WI": 41.900001525878906
+    },
+    "category_volume_share_pct": {
+      "FOODS": 33.56999969482422,
+      "HOBBIES": 34.2599983215332,
+      "HOUSEHOLD": 32.16999816894531
+    }
+  }
+}

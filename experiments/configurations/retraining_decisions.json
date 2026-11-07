@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-11-06T23:48:48.804462",
+  "model_name": "MarketPulse_Champion_LGBM",
+  "baseline_metrics": {
+    "WAPE": 12.0,
+    "MAE": 0.254,
+    "RMSE": 0.389
+  },
+  "window_1_evaluation": {
+    "decision": "NO_ACTION",
+    "is_retraining_justified": false,
+    "urgency": "LOW",
+    "primary_reason": "Model performance is stable within statistical tolerance.",
+    "detailed_justification": [
+      "Operational WAPE (12.0%) is consistent with baseline (12.0%).",
+      "Residual tracking signal (|TS| = 0.0) is well within standard limits (<= 3.5).",
+      "Feature stability verified: Max PSI = 0.016 < 0.10."
+    ],
+    "recommended_action": "Maintain current model in production; no retraining required.",
+    "baseline_wape": 12.0,
+    "current_wape": 12.0,
+    "delta_wape_pct": -0.01,
+    "max_tracking_signal": 4.68,
+    "latest_tracking_signal": 0.0,
+    "bias_z_score": 0.0,
+    "cusum_alarm_triggered": false,
+    "max_feature_psi": 0.016,
+    "target_psi": 0.009,
+    "timestamp": null
+  },
+  "window_2_evaluation": {
+    "decision": "CRITICAL_FALLBACK",
+    "is_retraining_justified": true,
+    "urgency": "CRITICAL",
+    "primary_reason": "Catastrophic error degradation: WAPE increased by 190.2%.",
+    "detailed_justification": [
+      "Current WAPE (34.82%) exceeds critical threshold (+50.0% over baseline 12.0%).",
+      "Severe persistent systematic bias: |Tracking Signal| = 16.0 > 3.5 (Z = 17.14)."
+    ],
+    "recommended_action": "IMMEDIATE ACTION: Switch serving traffic to robust fallback baseline (Seasonal Naive / Croston) and trigger immediate high-priority model retraining and hyperparameter re-tuning.",
+    "baseline_wape": 12.0,
+    "current_wape": 34.82,
+    "delta_wape_pct": 190.19,
+    "max_tracking_signal": 16.0,
+    "latest_tracking_signal": 16.0,
+    "bias_z_score": 17.139,
+    "cusum_alarm_triggered": true,
+    "max_feature_psi": 0.056,
+    "target_psi": 0.015,
+    "timestamp": null
+  }
+}

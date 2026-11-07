@@ -1,0 +1,825 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-06 17:32:32 UTC",
+    "metric": "wape",
+    "horizon": 14,
+    "n_series": 45
+  },
+  "routing_map": {
+    "CA_1_FOODS_1_000": "Croston",
+    "CA_1_FOODS_1_003": "Croston",
+    "CA_1_FOODS_1_006": "Croston",
+    "CA_1_FOODS_1_009": "Croston",
+    "CA_1_FOODS_1_012": "Seasonal_Naive",
+    "CA_1_HOBBIES_2_001": "Croston",
+    "CA_1_HOBBIES_2_004": "Croston",
+    "CA_1_HOBBIES_2_007": "Croston",
+    "CA_1_HOBBIES_2_010": "Croston",
+    "CA_1_HOBBIES_2_013": "Seasonal_Naive",
+    "CA_1_HOUSEHOLD_3_002": "Croston",
+    "CA_1_HOUSEHOLD_3_005": "Naive_Last",
+    "CA_1_HOUSEHOLD_3_008": "Croston",
+    "CA_1_HOUSEHOLD_3_011": "Naive_Last",
+    "CA_1_HOUSEHOLD_3_014": "Croston",
+    "TX_1_FOODS_1_000": "Croston",
+    "TX_1_FOODS_1_003": "Croston",
+    "TX_1_FOODS_1_006": "Naive_Last",
+    "TX_1_FOODS_1_009": "Croston",
+    "TX_1_FOODS_1_012": "Theta",
+    "TX_1_HOBBIES_2_001": "Theta",
+    "TX_1_HOBBIES_2_004": "Tuned_LightGBM",
+    "TX_1_HOBBIES_2_007": "Croston",
+    "TX_1_HOBBIES_2_010": "Seasonal_Naive",
+    "TX_1_HOBBIES_2_013": "Croston",
+    "TX_1_HOUSEHOLD_3_002": "Naive_Last",
+    "TX_1_HOUSEHOLD_3_005": "Croston",
+    "TX_1_HOUSEHOLD_3_008": "Croston",
+    "TX_1_HOUSEHOLD_3_011": "Croston",
+    "TX_1_HOUSEHOLD_3_014": "Croston",
+    "WI_1_FOODS_1_000": "Croston",
+    "WI_1_FOODS_1_003": "Croston",
+    "WI_1_FOODS_1_006": "Croston",
+    "WI_1_FOODS_1_009": "Croston",
+    "WI_1_FOODS_1_012": "Croston",
+    "WI_1_HOBBIES_2_001": "Theta",
+    "WI_1_HOBBIES_2_004": "Theta",
+    "WI_1_HOBBIES_2_007": "Theta",
+    "WI_1_HOBBIES_2_010": "Croston",
+    "WI_1_HOBBIES_2_013": "Theta",
+    "WI_1_HOUSEHOLD_3_002": "Theta",
+    "WI_1_HOUSEHOLD_3_005": "Naive_Last",
+    "WI_1_HOUSEHOLD_3_008": "Croston",
+    "WI_1_HOUSEHOLD_3_011": "Theta",
+    "WI_1_HOUSEHOLD_3_014": "Croston"
+  },
+  "results": {
+    "CA_1_FOODS_1_000": {
+      "series_id": "CA_1_FOODS_1_000",
+      "regime": "Intermittent",
+      "adi": 1.5,
+      "cv2": 0.2,
+      "champion_model": "Croston",
+      "champion_score": 160.526,
+      "all_scores": {
+        "Seasonal_Naive": 197.097,
+        "Naive_Last": 337.097,
+        "Theta": 163.388,
+        "Croston": 160.526
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 163.388,
+      "selection_margin": 2.862
+    },
+    "CA_1_FOODS_1_003": {
+      "series_id": "CA_1_FOODS_1_003",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.24,
+      "champion_model": "Croston",
+      "champion_score": 73.225,
+      "all_scores": {
+        "Seasonal_Naive": 114.304,
+        "Naive_Last": 96.296,
+        "Theta": 84.179,
+        "Croston": 73.225
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 84.179,
+      "selection_margin": 10.954
+    },
+    "CA_1_FOODS_1_006": {
+      "series_id": "CA_1_FOODS_1_006",
+      "regime": "Intermittent",
+      "adi": 1.58,
+      "cv2": 0.36,
+      "champion_model": "Croston",
+      "champion_score": 90.72,
+      "all_scores": {
+        "Seasonal_Naive": 103.804,
+        "Naive_Last": 100.0,
+        "Theta": 91.724,
+        "Croston": 90.72
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 91.724,
+      "selection_margin": 1.004
+    },
+    "CA_1_FOODS_1_009": {
+      "series_id": "CA_1_FOODS_1_009",
+      "regime": "Intermittent",
+      "adi": 1.53,
+      "cv2": 0.36,
+      "champion_model": "Croston",
+      "champion_score": 83.356,
+      "all_scores": {
+        "Seasonal_Naive": 104.167,
+        "Naive_Last": 112.5,
+        "Theta": 94.121,
+        "Croston": 83.356
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 94.121,
+      "selection_margin": 10.765
+    },
+    "CA_1_FOODS_1_012": {
+      "series_id": "CA_1_FOODS_1_012",
+      "regime": "Intermittent",
+      "adi": 1.58,
+      "cv2": 0.19,
+      "champion_model": "Seasonal_Naive",
+      "champion_score": 95.652,
+      "all_scores": {
+        "Seasonal_Naive": 95.652,
+        "Naive_Last": 96.154,
+        "Theta": 97.329,
+        "Croston": 96.387
+      },
+      "runner_up_model": "Naive_Last",
+      "runner_up_score": 96.154,
+      "selection_margin": 0.502
+    },
+    "CA_1_HOBBIES_2_001": {
+      "series_id": "CA_1_HOBBIES_2_001",
+      "regime": "Intermittent",
+      "adi": 1.41,
+      "cv2": 0.26,
+      "champion_model": "Croston",
+      "champion_score": 74.044,
+      "all_scores": {
+        "Seasonal_Naive": 116.807,
+        "Naive_Last": 107.983,
+        "Theta": 81.586,
+        "Croston": 74.044
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 81.586,
+      "selection_margin": 7.542
+    },
+    "CA_1_HOBBIES_2_004": {
+      "series_id": "CA_1_HOBBIES_2_004",
+      "regime": "Intermittent",
+      "adi": 1.55,
+      "cv2": 0.33,
+      "champion_model": "Croston",
+      "champion_score": 79.54,
+      "all_scores": {
+        "Seasonal_Naive": 113.299,
+        "Naive_Last": 279.54,
+        "Theta": 90.293,
+        "Croston": 79.54
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 90.293,
+      "selection_margin": 10.753
+    },
+    "CA_1_HOBBIES_2_007": {
+      "series_id": "CA_1_HOBBIES_2_007",
+      "regime": "Intermittent",
+      "adi": 1.76,
+      "cv2": 0.34,
+      "champion_model": "Croston",
+      "champion_score": 101.847,
+      "all_scores": {
+        "Seasonal_Naive": 128.182,
+        "Naive_Last": 140.0,
+        "Theta": 104.007,
+        "Croston": 101.847
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 104.007,
+      "selection_margin": 2.16
+    },
+    "CA_1_HOBBIES_2_010": {
+      "series_id": "CA_1_HOBBIES_2_010",
+      "regime": "Intermittent",
+      "adi": 1.84,
+      "cv2": 0.35,
+      "champion_model": "Croston",
+      "champion_score": 145.004,
+      "all_scores": {
+        "Seasonal_Naive": 193.382,
+        "Naive_Last": 175.0,
+        "Theta": 160.25,
+        "Croston": 145.004
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 160.25,
+      "selection_margin": 15.246
+    },
+    "CA_1_HOBBIES_2_013": {
+      "series_id": "CA_1_HOBBIES_2_013",
+      "regime": "Intermittent",
+      "adi": 1.84,
+      "cv2": 0.33,
+      "champion_model": "Seasonal_Naive",
+      "champion_score": 90.909,
+      "all_scores": {
+        "Seasonal_Naive": 90.909,
+        "Naive_Last": 100.0,
+        "Theta": 92.683,
+        "Croston": 92.253
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 92.253,
+      "selection_margin": 1.344
+    },
+    "CA_1_HOUSEHOLD_3_002": {
+      "series_id": "CA_1_HOUSEHOLD_3_002",
+      "regime": "Intermittent",
+      "adi": 1.91,
+      "cv2": 0.29,
+      "champion_model": "Croston",
+      "champion_score": 98.577,
+      "all_scores": {
+        "Seasonal_Naive": 106.767,
+        "Naive_Last": 104.762,
+        "Theta": 103.258,
+        "Croston": 98.577
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 103.258,
+      "selection_margin": 4.681
+    },
+    "CA_1_HOUSEHOLD_3_005": {
+      "series_id": "CA_1_HOUSEHOLD_3_005",
+      "regime": "Intermittent",
+      "adi": 1.91,
+      "cv2": 0.4,
+      "champion_model": "Naive_Last",
+      "champion_score": 88.0,
+      "all_scores": {
+        "Seasonal_Naive": 159.429,
+        "Naive_Last": 88.0,
+        "Theta": 151.923,
+        "Croston": 139.659
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 139.659,
+      "selection_margin": 51.659
+    },
+    "CA_1_HOUSEHOLD_3_008": {
+      "series_id": "CA_1_HOUSEHOLD_3_008",
+      "regime": "Intermittent",
+      "adi": 1.38,
+      "cv2": 0.42,
+      "champion_model": "Croston",
+      "champion_score": 66.249,
+      "all_scores": {
+        "Seasonal_Naive": 102.639,
+        "Naive_Last": 100.0,
+        "Theta": 67.729,
+        "Croston": 66.249
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 67.729,
+      "selection_margin": 1.48
+    },
+    "CA_1_HOUSEHOLD_3_011": {
+      "series_id": "CA_1_HOUSEHOLD_3_011",
+      "regime": "Intermittent",
+      "adi": 1.64,
+      "cv2": 0.25,
+      "champion_model": "Naive_Last",
+      "champion_score": 71.667,
+      "all_scores": {
+        "Seasonal_Naive": 99.667,
+        "Naive_Last": 71.667,
+        "Theta": 78.888,
+        "Croston": 73.894
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 73.894,
+      "selection_margin": 2.227
+    },
+    "CA_1_HOUSEHOLD_3_014": {
+      "series_id": "CA_1_HOUSEHOLD_3_014",
+      "regime": "Intermittent",
+      "adi": 1.55,
+      "cv2": 0.27,
+      "champion_model": "Croston",
+      "champion_score": 84.35,
+      "all_scores": {
+        "Seasonal_Naive": 95.486,
+        "Naive_Last": 105.556,
+        "Theta": 87.384,
+        "Croston": 84.35
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 87.384,
+      "selection_margin": 3.034
+    },
+    "TX_1_FOODS_1_000": {
+      "series_id": "TX_1_FOODS_1_000",
+      "regime": "Intermittent",
+      "adi": 1.61,
+      "cv2": 0.22,
+      "champion_model": "Croston",
+      "champion_score": 107.315,
+      "all_scores": {
+        "Seasonal_Naive": 130.769,
+        "Naive_Last": 107.692,
+        "Theta": 121.227,
+        "Croston": 107.315
+      },
+      "runner_up_model": "Naive_Last",
+      "runner_up_score": 107.692,
+      "selection_margin": 0.377
+    },
+    "TX_1_FOODS_1_003": {
+      "series_id": "TX_1_FOODS_1_003",
+      "regime": "Intermittent",
+      "adi": 1.38,
+      "cv2": 0.23,
+      "champion_model": "Croston",
+      "champion_score": 74.305,
+      "all_scores": {
+        "Seasonal_Naive": 129.756,
+        "Naive_Last": 100.183,
+        "Theta": 76.727,
+        "Croston": 74.305
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 76.727,
+      "selection_margin": 2.422
+    },
+    "TX_1_FOODS_1_006": {
+      "series_id": "TX_1_FOODS_1_006",
+      "regime": "Intermittent",
+      "adi": 1.32,
+      "cv2": 0.37,
+      "champion_model": "Naive_Last",
+      "champion_score": 66.176,
+      "all_scores": {
+        "Seasonal_Naive": 93.137,
+        "Naive_Last": 66.176,
+        "Theta": 71.497,
+        "Croston": 70.828
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 70.828,
+      "selection_margin": 4.652
+    },
+    "TX_1_FOODS_1_009": {
+      "series_id": "TX_1_FOODS_1_009",
+      "regime": "Intermittent",
+      "adi": 1.5,
+      "cv2": 0.27,
+      "champion_model": "Croston",
+      "champion_score": 76.957,
+      "all_scores": {
+        "Seasonal_Naive": 84.242,
+        "Naive_Last": 84.848,
+        "Theta": 77.376,
+        "Croston": 76.957
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 77.376,
+      "selection_margin": 0.419
+    },
+    "TX_1_FOODS_1_012": {
+      "series_id": "TX_1_FOODS_1_012",
+      "regime": "Intermittent",
+      "adi": 1.53,
+      "cv2": 0.27,
+      "champion_model": "Theta",
+      "champion_score": 103.522,
+      "all_scores": {
+        "Seasonal_Naive": 132.996,
+        "Naive_Last": 251.012,
+        "Theta": 103.522,
+        "Croston": 103.585
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 103.585,
+      "selection_margin": 0.063
+    },
+    "TX_1_HOBBIES_2_001": {
+      "series_id": "TX_1_HOBBIES_2_001",
+      "regime": "Intermittent",
+      "adi": 1.45,
+      "cv2": 0.26,
+      "champion_model": "Theta",
+      "champion_score": 69.475,
+      "all_scores": {
+        "Seasonal_Naive": 75.03,
+        "Naive_Last": 75.508,
+        "Theta": 69.475,
+        "Croston": 72.385
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 72.385,
+      "selection_margin": 2.91
+    },
+    "TX_1_HOBBIES_2_004": {
+      "series_id": "TX_1_HOBBIES_2_004",
+      "regime": "Smooth",
+      "adi": 1.3,
+      "cv2": 0.23,
+      "champion_model": "Tuned_LightGBM",
+      "champion_score": 57.342,
+      "all_scores": {
+        "Seasonal_Naive": 78.397,
+        "Theta": 61.654,
+        "Exponential_Smoothing": 61.889,
+        "LightGBM_Reduction": 67.92,
+        "Tuned_LightGBM": 57.342
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 61.654,
+      "selection_margin": 4.312
+    },
+    "TX_1_HOBBIES_2_007": {
+      "series_id": "TX_1_HOBBIES_2_007",
+      "regime": "Intermittent",
+      "adi": 1.53,
+      "cv2": 0.26,
+      "champion_model": "Croston",
+      "champion_score": 80.051,
+      "all_scores": {
+        "Seasonal_Naive": 110.101,
+        "Naive_Last": 114.899,
+        "Theta": 89.326,
+        "Croston": 80.051
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 89.326,
+      "selection_margin": 9.275
+    },
+    "TX_1_HOBBIES_2_010": {
+      "series_id": "TX_1_HOBBIES_2_010",
+      "regime": "Smooth",
+      "adi": 1.3,
+      "cv2": 0.2,
+      "champion_model": "Seasonal_Naive",
+      "champion_score": 88.278,
+      "all_scores": {
+        "Seasonal_Naive": 88.278,
+        "Theta": 92.604,
+        "Exponential_Smoothing": 93.065,
+        "LightGBM_Reduction": 89.115,
+        "Tuned_LightGBM": 100.284
+      },
+      "runner_up_model": "LightGBM_Reduction",
+      "runner_up_score": 89.115,
+      "selection_margin": 0.837
+    },
+    "TX_1_HOBBIES_2_013": {
+      "series_id": "TX_1_HOBBIES_2_013",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.2,
+      "champion_model": "Croston",
+      "champion_score": 99.756,
+      "all_scores": {
+        "Seasonal_Naive": 139.125,
+        "Naive_Last": 203.581,
+        "Theta": 106.506,
+        "Croston": 99.756
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 106.506,
+      "selection_margin": 6.75
+    },
+    "TX_1_HOUSEHOLD_3_002": {
+      "series_id": "TX_1_HOUSEHOLD_3_002",
+      "regime": "Intermittent",
+      "adi": 1.84,
+      "cv2": 0.29,
+      "champion_model": "Naive_Last",
+      "champion_score": 100.0,
+      "all_scores": {
+        "Seasonal_Naive": 153.704,
+        "Naive_Last": 100.0,
+        "Theta": 132.387,
+        "Croston": 128.665
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 128.665,
+      "selection_margin": 28.665
+    },
+    "TX_1_HOUSEHOLD_3_005": {
+      "series_id": "TX_1_HOUSEHOLD_3_005",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.18,
+      "champion_model": "Croston",
+      "champion_score": 81.481,
+      "all_scores": {
+        "Seasonal_Naive": 95.286,
+        "Naive_Last": 102.273,
+        "Theta": 83.564,
+        "Croston": 81.481
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 83.564,
+      "selection_margin": 2.083
+    },
+    "TX_1_HOUSEHOLD_3_008": {
+      "series_id": "TX_1_HOUSEHOLD_3_008",
+      "regime": "Intermittent",
+      "adi": 1.58,
+      "cv2": 0.33,
+      "champion_model": "Croston",
+      "champion_score": 73.049,
+      "all_scores": {
+        "Seasonal_Naive": 97.059,
+        "Naive_Last": 137.666,
+        "Theta": 80.426,
+        "Croston": 73.049
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 80.426,
+      "selection_margin": 7.377
+    },
+    "TX_1_HOUSEHOLD_3_011": {
+      "series_id": "TX_1_HOUSEHOLD_3_011",
+      "regime": "Intermittent",
+      "adi": 1.53,
+      "cv2": 0.33,
+      "champion_model": "Croston",
+      "champion_score": 73.904,
+      "all_scores": {
+        "Seasonal_Naive": 123.81,
+        "Naive_Last": 83.333,
+        "Theta": 85.147,
+        "Croston": 73.904
+      },
+      "runner_up_model": "Naive_Last",
+      "runner_up_score": 83.333,
+      "selection_margin": 9.429
+    },
+    "TX_1_HOUSEHOLD_3_014": {
+      "series_id": "TX_1_HOUSEHOLD_3_014",
+      "regime": "Intermittent",
+      "adi": 1.61,
+      "cv2": 0.3,
+      "champion_model": "Croston",
+      "champion_score": 96.94,
+      "all_scores": {
+        "Seasonal_Naive": 113.333,
+        "Naive_Last": 105.0,
+        "Theta": 101.332,
+        "Croston": 96.94
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 101.332,
+      "selection_margin": 4.392
+    },
+    "WI_1_FOODS_1_000": {
+      "series_id": "WI_1_FOODS_1_000",
+      "regime": "Intermittent",
+      "adi": 1.41,
+      "cv2": 0.23,
+      "champion_model": "Croston",
+      "champion_score": 62.161,
+      "all_scores": {
+        "Seasonal_Naive": 103.193,
+        "Naive_Last": 113.282,
+        "Theta": 65.594,
+        "Croston": 62.161
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 65.594,
+      "selection_margin": 3.433
+    },
+    "WI_1_FOODS_1_003": {
+      "series_id": "WI_1_FOODS_1_003",
+      "regime": "Intermittent",
+      "adi": 1.38,
+      "cv2": 0.27,
+      "champion_model": "Croston",
+      "champion_score": 69.591,
+      "all_scores": {
+        "Seasonal_Naive": 101.31,
+        "Naive_Last": 87.879,
+        "Theta": 73.828,
+        "Croston": 69.591
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 73.828,
+      "selection_margin": 4.237
+    },
+    "WI_1_FOODS_1_006": {
+      "series_id": "WI_1_FOODS_1_006",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.21,
+      "champion_model": "Croston",
+      "champion_score": 74.261,
+      "all_scores": {
+        "Seasonal_Naive": 103.544,
+        "Naive_Last": 81.034,
+        "Theta": 87.201,
+        "Croston": 74.261
+      },
+      "runner_up_model": "Naive_Last",
+      "runner_up_score": 81.034,
+      "selection_margin": 6.773
+    },
+    "WI_1_FOODS_1_009": {
+      "series_id": "WI_1_FOODS_1_009",
+      "regime": "Intermittent",
+      "adi": 1.38,
+      "cv2": 0.22,
+      "champion_model": "Croston",
+      "champion_score": 66.999,
+      "all_scores": {
+        "Seasonal_Naive": 87.5,
+        "Naive_Last": 92.5,
+        "Theta": 71.241,
+        "Croston": 66.999
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 71.241,
+      "selection_margin": 4.242
+    },
+    "WI_1_FOODS_1_012": {
+      "series_id": "WI_1_FOODS_1_012",
+      "regime": "Intermittent",
+      "adi": 1.5,
+      "cv2": 0.35,
+      "champion_model": "Croston",
+      "champion_score": 73.885,
+      "all_scores": {
+        "Seasonal_Naive": 106.944,
+        "Naive_Last": 111.806,
+        "Theta": 83.419,
+        "Croston": 73.885
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 83.419,
+      "selection_margin": 9.534
+    },
+    "WI_1_HOBBIES_2_001": {
+      "series_id": "WI_1_HOBBIES_2_001",
+      "regime": "Intermittent",
+      "adi": 1.32,
+      "cv2": 0.18,
+      "champion_model": "Theta",
+      "champion_score": 67.899,
+      "all_scores": {
+        "Seasonal_Naive": 103.797,
+        "Naive_Last": 90.476,
+        "Theta": 67.899,
+        "Croston": 68.876
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 68.876,
+      "selection_margin": 0.977
+    },
+    "WI_1_HOBBIES_2_004": {
+      "series_id": "WI_1_HOBBIES_2_004",
+      "regime": "Intermittent",
+      "adi": 1.45,
+      "cv2": 0.17,
+      "champion_model": "Theta",
+      "champion_score": 76.752,
+      "all_scores": {
+        "Seasonal_Naive": 90.698,
+        "Naive_Last": 91.304,
+        "Theta": 76.752,
+        "Croston": 81.78
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 81.78,
+      "selection_margin": 5.028
+    },
+    "WI_1_HOBBIES_2_007": {
+      "series_id": "WI_1_HOBBIES_2_007",
+      "regime": "Intermittent",
+      "adi": 1.55,
+      "cv2": 0.23,
+      "champion_model": "Theta",
+      "champion_score": 71.225,
+      "all_scores": {
+        "Seasonal_Naive": 71.97,
+        "Naive_Last": 106.061,
+        "Theta": 71.225,
+        "Croston": 77.948
+      },
+      "runner_up_model": "Seasonal_Naive",
+      "runner_up_score": 71.97,
+      "selection_margin": 0.745
+    },
+    "WI_1_HOBBIES_2_010": {
+      "series_id": "WI_1_HOBBIES_2_010",
+      "regime": "Intermittent",
+      "adi": 1.58,
+      "cv2": 0.2,
+      "champion_model": "Croston",
+      "champion_score": 78.457,
+      "all_scores": {
+        "Seasonal_Naive": 97.46,
+        "Naive_Last": 84.444,
+        "Theta": 83.746,
+        "Croston": 78.457
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 83.746,
+      "selection_margin": 5.289
+    },
+    "WI_1_HOBBIES_2_013": {
+      "series_id": "WI_1_HOBBIES_2_013",
+      "regime": "Intermittent",
+      "adi": 1.5,
+      "cv2": 0.22,
+      "champion_model": "Theta",
+      "champion_score": 103.483,
+      "all_scores": {
+        "Seasonal_Naive": 125.0,
+        "Naive_Last": 204.167,
+        "Theta": 103.483,
+        "Croston": 106.76
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 106.76,
+      "selection_margin": 3.277
+    },
+    "WI_1_HOUSEHOLD_3_002": {
+      "series_id": "WI_1_HOUSEHOLD_3_002",
+      "regime": "Intermittent",
+      "adi": 1.53,
+      "cv2": 0.21,
+      "champion_model": "Theta",
+      "champion_score": 73.458,
+      "all_scores": {
+        "Seasonal_Naive": 91.696,
+        "Naive_Last": 91.429,
+        "Theta": 73.458,
+        "Croston": 76.038
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 76.038,
+      "selection_margin": 2.58
+    },
+    "WI_1_HOUSEHOLD_3_005": {
+      "series_id": "WI_1_HOUSEHOLD_3_005",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.26,
+      "champion_model": "Naive_Last",
+      "champion_score": 64.784,
+      "all_scores": {
+        "Seasonal_Naive": 94.103,
+        "Naive_Last": 64.784,
+        "Theta": 72.891,
+        "Croston": 69.726
+      },
+      "runner_up_model": "Croston",
+      "runner_up_score": 69.726,
+      "selection_margin": 4.942
+    },
+    "WI_1_HOUSEHOLD_3_008": {
+      "series_id": "WI_1_HOUSEHOLD_3_008",
+      "regime": "Intermittent",
+      "adi": 1.48,
+      "cv2": 0.22,
+      "champion_model": "Croston",
+      "champion_score": 70.761,
+      "all_scores": {
+        "Seasonal_Naive": 86.652,
+        "Naive_Last": 96.552,
+        "Theta": 77.261,
+        "Croston": 70.761
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 77.261,
+      "selection_margin": 6.5
+    },
+    "WI_1_HOUSEHOLD_3_011": {
+      "series_id": "WI_1_HOUSEHOLD_3_011",
+      "regime": "Smooth",
+      "adi": 1.29,
+      "cv2": 0.16,
+      "champion_model": "Theta",
+      "champion_score": 67.521,
+      "all_scores": {
+        "Seasonal_Naive": 79.673,
+        "Theta": 67.521,
+        "Exponential_Smoothing": 67.576,
+        "LightGBM_Reduction": 68.41,
+        "Tuned_LightGBM": 71.714
+      },
+      "runner_up_model": "Exponential_Smoothing",
+      "runner_up_score": 67.576,
+      "selection_margin": 0.055
+    },
+    "WI_1_HOUSEHOLD_3_014": {
+      "series_id": "WI_1_HOUSEHOLD_3_014",
+      "regime": "Intermittent",
+      "adi": 1.34,
+      "cv2": 0.27,
+      "champion_model": "Croston",
+      "champion_score": 72.951,
+      "all_scores": {
+        "Seasonal_Naive": 93.611,
+        "Naive_Last": 107.498,
+        "Theta": 79.118,
+        "Croston": 72.951
+      },
+      "runner_up_model": "Theta",
+      "runner_up_score": 79.118,
+      "selection_margin": 6.167
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# MarketPulse: Hierarchical Probabilistic Demand Forecasting Engine
+# Core Time-Series & Scientific Computing
+sktime>=0.33.0
+statsmodels>=0.14.2
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.14.0
+pyarrow>=15.0.0
+
+# Machine Learning
+scikit-learn>=1.5.0
+lightgbm>=4.5.0
+
+# Optimization & Experiment Tracking
+optuna>=4.0.0
+mlflow>=2.15.0
+
+# Visualization
+matplotlib>=3.9.0
+seaborn>=0.13.0
+plotly>=5.24.0
+
+# Backend & APIs (Later Phase)
+fastapi>=0.115.0
+pydantic>=2.9.0
+uvicorn>=0.30.0
+
+# Configuration & Testing
+pyyaml>=6.0.2
+pytest>=8.3.0
+tqdm>=4.66.0
+

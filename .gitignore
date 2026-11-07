@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files (raw M5 files are large, ~500MB uncompressed)
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.parquet
+data/processed/*.csv
+data/external/*
+
+# Experiments & models
+models/*.pkl
+models/*.joblib
+experiments/results/*.csv
+experiments/results/*.parquet
+experiments/mlruns/
+
+# Logs & temp
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+.npm/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

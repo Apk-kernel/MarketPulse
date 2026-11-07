@@ -1,0 +1,49 @@
+# MarketPulse Configuration
+
+project:
+  name: "MarketPulse"
+  version: "0.1.0"
+  random_seed: 42
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  external_dir: "data/external"
+  sales_file: "sales_train_validation.csv"
+  calendar_file: "calendar.csv"
+  prices_file: "sell_prices.csv"
+  processed_file: "m5_processed.parquet"
+  processed_sample_file: "m5_processed_sample.parquet"
+  quality_report_file: "data_quality_report.json"
+  chunk_size: 100000
+  downcast_dtypes: true
+
+validation:
+  allow_negative_sales: false
+  enforce_date_continuity: true
+  enforce_hierarchy_consistency: true
+  flag_unlisted_as_nan: true  # Distinguish unlisted items from zero sales
+
+hierarchy:
+  structure:
+    - "state_id"
+    - "store_id"
+    - "cat_id"
+    - "dept_id"
+    - "item_id"
+  aggregation_levels:
+    level_1: ["state_id"]
+    level_2: ["state_id", "store_id"]
+    level_3: ["state_id", "store_id", "cat_id"]
+    level_4: ["state_id", "store_id", "dept_id"]
+    level_5: ["state_id", "store_id", "item_id"]
+
+forecasting:
+  horizons: [7, 14, 28]
+  default_horizon: 28
+  confidence_intervals: [0.80, 0.95]
+  backtest:
+    n_splits: 3
+    window_type: "expanding"  # or "rolling"
+    test_size: 28
+
